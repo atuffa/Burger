@@ -1,4 +1,4 @@
-# :Burger: Eat Da Burger!
+# Burger: Eat Da Burger!
 
 
 ### Overview
@@ -27,4 +27,4 @@ Lastly, the app's front-end design uses Bootstrap. This means that your burgers 
 
 
 - Mobile View
-  * ![Insert(posting](/screenShot/InsertNewBurger.png)
+  * ![Insert(posting](/ScreenShot/InsertNewBurger.png)
