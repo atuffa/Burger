@@ -1,0 +1,13 @@
+body{
+    background-color: orange;
+}
+h2{
+    color: red;
+}
+img{
+    width:200px;
+    height: 200px;
+}
+#devouredInput{
+    width: 400px;;
+}
