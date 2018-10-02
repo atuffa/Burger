@@ -8,6 +8,9 @@ img{
     width:200px;
     height: 200px;
 }
-#devouredInput{
-    width: 400px;;
+.undevour-button{
+    padding: 0px;
+    height: 25px;
+    width: 15px;
+    background:  white!important;
 }

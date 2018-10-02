@@ -8,12 +8,20 @@
                     {{#each burgers}}
                         {{#unless devoured}}
                          <form action="api/burgers/{{id}}" method="POST">
-                            <div class="input-group">
+                            <div class="input-group ">
+
                                 <li class ="form-control">
                                     {{id}}. {{burger}}
                                 </li>
+
+                                {{!-- Devour Button --}}
                                 <span class="input-group-btn">
                                     <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                                </span>
+
+                                {{!-- Delete Button --}}
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger devour-button" type="submit">X</button>
                                 </span>
                             </div>
                         </form>
@@ -21,16 +29,21 @@
                     {{/each}}
                 </div>
             
-
+            </center>
+            
+            <center>
             <!-- right side -->
             <div class="col-md-6">
                     <h3>Already Eaten!</h3>
                     <div class="input-group">
                         {{#each burgers}}
                             {{#if this.devoured}}
-                                <li class ="form-control" id="devouredInput">
+                                <li class ="form-control" >
                                 {{this.id}}. {{this.burger}}
+                                <button class="btn undevour-button pull-right" type="submit">X</button>
+                    
                                 </li>
+                                
                             {{/if}}
                         {{/each}}
                     </div>
