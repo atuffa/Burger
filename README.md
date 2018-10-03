@@ -26,8 +26,8 @@ Lastly, the app's front-end design uses Bootstrap. This means that your burgers 
 
 ### Screenshots
 - Desktop View
-  * ![Insert(posting)](/ScreenShot/2018-10-02 (2).png)
+  * ![Insert(posting)](/ScreenShot/desktop.png)
 
 
 - Mobile View
-  * ![Devoured](/ScreenShot/2018-10-02 (1).png)
+  * ![Devoured](/ScreenShot/mobile.png)
