@@ -7,21 +7,21 @@
                     <!-- Dynamically Insert Ready Burgers Here -->
                     {{#each burgers}}
                         {{#unless devoured}}
-                         <form action="api/burgers/{{id}}" method="POST">
+                         <form >
                             <div class="input-group ">
 
                                 <li class ="form-control">
-                                    {{id}}. {{burger}}
+                                    {{this.id}}. {{this.burger}}
                                 </li>
 
                                 {{!-- Devour Button --}}
                                 <span class="input-group-btn">
-                                    <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                                    <button class="btn btn-success devour-button" data-id = "{{this.id}}">Devour It!</button>
                                 </span>
 
                                 {{!-- Delete Button --}}
                                 <span class="input-group-btn">
-                                    <button class="btn btn-danger devour-button" type="submit">X</button>
+                                    <button class="btn btn-danger undevour-button" data-id = "{{this.id}}">X</button>
                                 </span>
                             </div>
                         </form>
@@ -39,9 +39,7 @@
                         {{#each burgers}}
                             {{#if this.devoured}}
                                 <li class ="form-control" >
-                                {{this.id}}. {{this.burger}}
-                                <button class="btn undevour-button pull-right" type="submit">X</button>
-                    
+                                    {{this.id}}. {{this.burger}}
                                 </li>
                                 
                             {{/if}}

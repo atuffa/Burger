@@ -76,8 +76,8 @@ function printQuestionMarks(num) {
             cb(result)
         })// End of update query
     },// End of UpdateOne ()
-    deleteOne: function(tableName, condtion, cb){
-        let query = `DELETE ${tableName} WHERE ${condition}`;
+    deleteOne: function(tableName, condition, cb){
+        let query = `DELETE FROM ${tableName} WHERE ${condition}`;
         console.log(query)
         connection.query(query, function(err, result){
             if (err){
@@ -86,7 +86,7 @@ function printQuestionMarks(num) {
             console.log(result)
             cb(result)
         })
-    }
+    }// End of deleteOne
   }// End Of ORM
 
 //Export the orm object for the model 

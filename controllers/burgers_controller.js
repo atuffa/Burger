@@ -22,8 +22,8 @@ router.get("/index", function(req, res){
     });
 });
 
-//Put(Update)
-router.post("/api/burgers/:id", function(req, res){
+// //Put(Update)
+router.put("/api/burgers/:id", function(req, res){
     let condition = "id =" + req.params.id;
     burger.updateOne({devoured: 1}, condition, function(result){
         // console.log(result);
@@ -31,13 +31,22 @@ router.post("/api/burgers/:id", function(req, res){
     }); 
 });
 
-//Post
+// Post
 router.post("/api/burgers", function(req, res){
     burger.insertOne(["burger"], [req.body.burgerName], function(result){
         // console.log(result);
         res.redirect('/index');
     });
 });
+
+// Post(delete)
+router.delete("/api/burgers/:id", function(req,res){
+    let condition = "id =" + req.params.id;
+    burger.deleteOne(condition, function(result){
+        // console.log(result);
+        res.redirect('/index');
+    })
+})
     
 // Export routes for server.js to use.
 module.exports = router;

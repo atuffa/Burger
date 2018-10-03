@@ -15,6 +15,9 @@ Using an home-grown ORM, the app has 3 basic CRUD functions...
   3. CREATE a new burger using the "Submit" form, which...
     * hits a `api/burger/` route in Express to insert a new burger into the MySQL database
     * re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
+  4. Delete bugers unders burger to eat using the delete(X) button
+    * hits a `api/burgers/:id` route to delete the burger from the list and the data base.
+    * re-routes the webpage back to the index, where the burger is deleted from to be eaten column (via Handlebars)
 
 
 
@@ -23,8 +26,8 @@ Lastly, the app's front-end design uses Bootstrap. This means that your burgers 
 
 ### Screenshots
 - Desktop View
-  * ![Devoured](/ScreenShot/Devoured.png)
+  * ![Devoured](/ScreenShot/2018-10-02 (2).png)
 
 
 - Mobile View
-  * ![Insert(posting](/ScreenShot/INsertNewBurger.png)
+  * ![Insert(posting](/ScreenShot/2018-10-02 (1).png)

@@ -16,9 +16,14 @@ let burgers = {
     updateOne: function(objColVals, condition, cb) {
         orm.updateOne("burgers", objColVals, condition, cb, function(result){
             cb(result);
-            
+
         })
-    }// End of updateOne
+    },// End of updateOne
+    deleteOne: function(condition, cb){
+        orm.deleteOne("burgers", condition, cb, function(result){
+            cb(result);
+        })
+    }// End of deleteOne
 }// End of obj burger
 
 module.exports = burgers;
