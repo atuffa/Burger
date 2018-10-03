@@ -10,14 +10,19 @@ Please check out the launched app on Heroku [here](http://eat-da-burger-abdisa.h
 Using an home-grown ORM, the app has 3 basic CRUD functions...
   1. READ all entries from the MySQL database and display them to the DOM using Handlebars.
   2. UPDATE a selected burger by clicking "Devour It", which...
-    * hits an `api/burger/:id` route in Express to change its "devoured" status in the MySQL database
-    * re-routes the webpage back to the index, where the burger is now in the devoured column (via Handlebars)
+  
+      * hits an `api/burger/:id` route in Express to change its "devoured" status in the MySQL database
+      * re-routes the webpage back to the index, where the burger is now in the devoured column (via Handlebars)
+      
   3. CREATE a new burger using the "Submit" form, which...
-    * hits a `api/burger/` route in Express to insert a new burger into the MySQL database
-    * re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
+  
+      * hits a `api/burger/` route in Express to insert a new burger into the MySQL database
+      * re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
+      
   4. DELETE a bugers unders burger to eat using the delete(X) button
-    * hits a `api/burgers/:id` route to delete the burger from the list and the data base.
-    * re-routes the webpage back to the index, where the burger is deleted from to be eaten column (via Handlebars)
+  
+      * hits a `api/burgers/:id` route to delete the burger from the list and the data base.
+      * re-routes the webpage back to the index, where the burger is deleted from to be eaten column (via Handlebars)
 
 
 
